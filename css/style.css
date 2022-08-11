@@ -21,7 +21,7 @@ body {
 
 .header {
   background-color: #666666;
-  background-image: url("/images/banner-mobile.jpg");
+  background-image: url(../images/banner-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -141,7 +141,7 @@ body {
 
 .trend {
   background-color: #fff;
-  background-image: url("/images/trend1.jpg");
+  background-image: url(../images/trend1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -173,15 +173,15 @@ body {
 }
 
 .trend:nth-child(2) {
-  background-image: url("/images/trend2.jpg");
+  background-image: url(../images/trend2.jpg);
 }
 
 .trend:nth-child(3) {
-  background-image: url("/images/trend3.jpg");
+  background-image: url(../images/trend3.jpg);
 }
 
 .trend:nth-child(4) {
-  background-image: url("/images/trend4.jpg");
+  background-image: url(../images/trend4.jpg");
 }
 
 .trend-container {
