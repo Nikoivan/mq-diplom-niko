@@ -906,7 +906,7 @@ body {
 
 @media (orientation: landscape) and (max-width: 640px), (min-width: 641px) {
   .header {
-    background-image: url(/images/banner-bg-tablet.jpg);
+    background-image: url(../images/banner-bg-tablet.jpg);
     padding: 44px 35px 110px;
   }
 
@@ -1257,7 +1257,7 @@ body {
 @media (min-width: 1200px) {
   .header {
     background-color: #000;
-    background-image: url(/images/banner-bg.jpg);
+    background-image: url(../images/banner-bg.jpg);
     background-position: left top;
     margin: 0 auto;
     padding: 28px 0 126px;
