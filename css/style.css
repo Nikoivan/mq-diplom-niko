@@ -527,7 +527,6 @@ body {
 
 .form-calendar:focus {
   outline: 1px solid #b59f5b;
-  outline-top: none;
 }
 
 .sub {
@@ -582,7 +581,6 @@ body {
 
 .survey:focus {
   outline: 1px solid #b59f5b;
-  outline-top: none;
 }
 
 .survey::placeholder {
@@ -731,8 +729,6 @@ body {
   padding: 54px 18px 26px;
   border: 3px solid #d3c59d;
   margin-bottom: 26px;
-  position: relative;
-  z-index: 10;
 }
 
 .product-first {
@@ -894,7 +890,7 @@ body {
   font-size: 12px;
 }
 
-@media (orientation: landscape) and (max-width: 640px), (min-width: 641px) {
+@media (min-width: 641px) {
   .header {
     background-image: url(../images/banner-bg-tablet.jpg);
     padding: 44px 35px 110px;
@@ -1185,6 +1181,7 @@ body {
     flex-basis: 40%;
     margin-top: 190px;
     padding-bottom: 0;
+    box-sizing: border-box;
   }
 
   .product-first {
@@ -1200,7 +1197,7 @@ body {
 
   .product__picture {
     margin-top: -250px;
-    align-self: flex-start;
+    align-self: center;
   }
 
   .product__image {
@@ -1559,9 +1556,7 @@ body {
   }
 
   .product__picture {
-    min-width: 300px;
     margin-top: -230px;
-    display: flex;
   }
 
   .product__image {
@@ -1569,7 +1564,8 @@ body {
     object-position: center center;
     width: 100%;
     height: 204px;
-    flex-grow: 1;
+    position: relative;
+    z-index: 1;
   }
 
   .product-simple__image {
@@ -1577,7 +1573,6 @@ body {
     object-position: center center;
     width: 100%;
     height: 204px;
-    flex-grow: 1;
   }
 
   .product-container {
