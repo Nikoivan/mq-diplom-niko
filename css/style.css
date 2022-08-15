@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Open Sans Regular";
-  src: local("Open Sans Regular") url("/fonts/OpenSans-Regular.woff");
+  src: local("Open Sans Regular") url(../fonts/OpenSans-Regular.woff);
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Open Sans Bold";
-  src: local("Open Sans Bold") url("/fonts/OpenSans-Bold.woff");
+  src: local("Open Sans Bold") url(../fonts/OpenSans-Bold.woff);
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -181,7 +181,7 @@ body {
 }
 
 .trend:nth-child(4) {
-  background-image: url(../images/trend4.jpg");
+  background-image: url(../images/trend4.jpg);
 }
 
 .trend-container {
@@ -212,10 +212,6 @@ body {
   margin-right: 10px;
 }
 
-.tag:hover {
-  text-decoration: underline;
-}
-
 .trend__header {
   margin-top: 10px;
   position: relative;
@@ -239,7 +235,7 @@ body {
 }
 
 .trend__title:hover {
-  font-weight: 800;
+  color: #b59f5b;
 }
 
 .container {
@@ -387,7 +383,7 @@ body {
 }
 
 .search-field:focus {
-  border: 1px solid #b59f5b;
+  outline: 1px solid #b59f5b;
 }
 
 .search-button {
@@ -522,7 +518,7 @@ body {
   font-size: 13px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url(/svg/form-arrows.svg);
+  background-image: url(../svg/form-arrows.svg);
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: 93% 54%;
@@ -530,8 +526,8 @@ body {
 }
 
 .form-calendar:focus {
-  border: 1px solid #ebe7d7;
-  border-top: none;
+  outline: 1px solid #b59f5b;
+  outline-top: none;
 }
 
 .sub {
@@ -555,14 +551,14 @@ body {
   margin: 0;
   width: 33px;
   height: 41px;
-  background-image: url(/svg/form-empty-circle.svg);
+  background-image: url(../svg/form-empty-circle.svg);
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 25px;
 }
 
 .subscription-check:checked + .radio-check::before {
-  background-image: url(/svg/form-circle.svg);
+  background-image: url(../svg/form-circle.svg);
 }
 
 .subscribe__footer {
@@ -585,8 +581,8 @@ body {
 }
 
 .survey:focus {
-  border: 1px solid #ebe7d7;
-  border-top: none;
+  outline: 1px solid #b59f5b;
+  outline-top: none;
 }
 
 .survey::placeholder {
@@ -635,17 +631,13 @@ body {
 }
 
 .tag-list-item:hover {
-  text-decoration: none;
+  border-color: #b59f5b;
 }
 
 .tag-link {
   font-size: 12px;
   color: #0f0d0e;
   letter-spacing: -0.3px;
-}
-
-.tag-link:hover {
-  font-weight: 800;
 }
 
 .themes {
@@ -690,7 +682,7 @@ body {
 }
 
 .theme-link:hover {
-  font-weight: 800;
+  color: #b59f5b;
 }
 
 .theme-sum {
@@ -707,6 +699,7 @@ body {
 .products {
   padding: 0 15px;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .products-list {
@@ -738,6 +731,8 @@ body {
   padding: 54px 18px 26px;
   border: 3px solid #d3c59d;
   margin-bottom: 26px;
+  position: relative;
+  z-index: 10;
 }
 
 .product-first {
@@ -750,7 +745,6 @@ body {
 
 .product__picture {
   margin-top: -310px;
-  z-index: 1;
 }
 
 .product__header {
@@ -772,16 +766,12 @@ body {
   margin: 2px 0 0;
 }
 
-.product-text:hover {
-  font-weight: 700;
-}
-
 .product__link {
   color: #b59f5b;
   text-decoration: none;
 }
 
-.product-link:hover {
+.product__link:hover {
   text-decoration: underline;
 }
 
@@ -923,7 +913,6 @@ body {
 
   .logo {
     margin-top: 0;
-    width: 23vw;
     order: 1;
   }
 
@@ -1304,8 +1293,8 @@ body {
     display: none;
   }
 
-  .logo {
-    width: 14.5vw;
+  .logotip {
+    width: 180px;
   }
 
   .header__title {
@@ -1337,8 +1326,6 @@ body {
 
   .trend-list {
     flex-wrap: nowrap;
-    min-width: 1650px;
-    margin-left: -168px;
     justify-content: space-between;
     align-items: flex-end;
   }
@@ -1555,6 +1542,8 @@ body {
   .product {
     max-width: 26%;
     margin-top: 168px;
+    position: relative;
+    z-index: 2;
   }
 
   .product-first {
@@ -1572,20 +1561,23 @@ body {
   .product__picture {
     min-width: 300px;
     margin-top: -230px;
+    display: flex;
   }
 
   .product__image {
     object-fit: cover;
     object-position: center center;
-    width: 301px;
+    width: 100%;
     height: 204px;
+    flex-grow: 1;
   }
 
   .product-simple__image {
     object-fit: cover;
     object-position: center center;
-    width: 301px;
+    width: 100%;
     height: 204px;
+    flex-grow: 1;
   }
 
   .product-container {
