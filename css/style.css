@@ -388,7 +388,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-image: url(/svg/search.svg);
+  background-image: url(../svg/search.svg);
   fill: #ffffff;
   background-repeat: no-repeat;
   background-position: center center;
@@ -443,7 +443,7 @@ body {
   margin-top: 42px;
 }
 
-.popup__hidden {
+.popup {
   display: none;
   padding: 56px 15px 31px;
   position: fixed;
