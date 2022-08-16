@@ -267,10 +267,6 @@ body {
   color: #0f0d0e;
 }
 
-.post__title:hover {
-  font-weight: 800;
-}
-
 .post-info {
   margin-top: 14px;
 }
@@ -447,7 +443,7 @@ body {
   margin-top: 42px;
 }
 
-.popup {
+.popup__hidden {
   display: none;
   padding: 56px 15px 31px;
   position: fixed;
@@ -713,42 +709,38 @@ body {
   font-size: 16px;
 }
 
-.product-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  z-index: 2;
-}
-
 .product {
   flex: 1 1 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 254px;
-  padding: 54px 18px 26px;
-  border: 3px solid #d3c59d;
-  margin-bottom: 26px;
+  justify-content: end;
+  margin-top: 27px;
 }
 
 .product-first {
-  margin-top: 273px;
+  margin-top: 20px;
 }
 
 .last-product {
-  margin-top: 249px;
+  margin-top: 22px;
 }
 
 .product__picture {
-  margin-top: -310px;
+  flex-grow: 1;
 }
 
-.product__header {
-  margin-top: 18px;
+.product-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: -36px;
+  padding: 50px 24px 26px 17px;
+  border: 3px solid #d3c59d;
 }
 
 .product__title {
   font-size: 17px;
+  letter-spacing: 0.3px;
   margin: 0;
 }
 
@@ -773,7 +765,7 @@ body {
 
 .product__footer {
   display: flex;
-  margin-top: 21px;
+  margin-top: 22px;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -825,7 +817,7 @@ body {
   box-sizing: border-box;
   background-color: #ffffff;
   padding: 0 15px 40px;
-  margin: 18px auto 0;
+  margin: 45px auto 0;
 }
 
 .contacts {
@@ -910,6 +902,10 @@ body {
   .logo {
     margin-top: 0;
     order: 1;
+  }
+
+  .logotip {
+    width: 53%;
   }
 
   .header__title {
@@ -1169,7 +1165,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 23px 0;
+    padding: 20px 0;
+  }
+
+  .product-container {
+    margin-top: -35px;
+    padding-right: 12px;
+    justify-content: flex-start;
   }
 
   .products__header {
@@ -1178,48 +1180,42 @@ body {
   }
 
   .product {
-    flex-basis: 40%;
-    margin-top: 190px;
-    padding-bottom: 0;
-    box-sizing: border-box;
+    flex-basis: 42%;
+    justify-content: flex-start;
+    margin-top: 0;
   }
 
   .product-first {
     margin-right: 20px;
+    margin-top: 0;
   }
 
   .last-product {
-    margin-top: 191px;
-    max-width: 42.5%;
-    padding-bottom: 27px;
-    padding-top: 58px;
+    max-width: 48%;
+    margin-top: 25px;
   }
 
   .product__picture {
-    margin-top: -250px;
-    align-self: center;
+    flex-grow: 1;
+    width: 86%;
   }
 
   .product__image {
     object-fit: cover;
     object-position: center center;
     max-height: 225px;
-    width: 130%;
+    width: 100%;
   }
 
   .product-simple__image {
     object-fit: cover;
     object-position: center center;
     max-height: 225px;
-    width: 130%;
-  }
-
-  .product-container {
-    margin-top: 0;
+    width: 100%;
   }
 
   .product-container-add {
-    padding-bottom: 71px;
+    padding-bottom: 70px;
   }
 
   .product__footer {
@@ -1228,7 +1224,7 @@ body {
   }
 
   .footer {
-    margin: 0 auto;
+    margin: 32px auto;
   }
 
   .social-networks-list {
@@ -1521,6 +1517,10 @@ body {
     margin-top: 24px;
   }
 
+  .products {
+    margin: 0;
+  }
+
   .products__header {
     margin-top: 58px;
   }
@@ -1537,26 +1537,11 @@ body {
   }
 
   .product {
-    max-width: 26%;
-    margin-top: 168px;
-    position: relative;
-    z-index: 2;
-  }
-
-  .product-first {
-    margin-right: 0;
-    flex-grow: 0;
+    margin-right: 64px;
   }
 
   .last-product {
-    margin-top: 165px;
-    margin-left: 0;
-    flex-grow: 0;
-    padding-bottom: 15px;
-  }
-
-  .product__picture {
-    margin-top: -230px;
+    margin-top: 0;
   }
 
   .product__image {
@@ -1576,11 +1561,11 @@ body {
   }
 
   .product-container {
-    margin-top: -54px;
+    margin-top: -37px;
     box-sizing: border-box;
     width: 347px;
     height: 267px;
-    padding: 54px 20px 0;
+    padding: 51px 17px 0;
     justify-content: start;
   }
 
@@ -1668,6 +1653,7 @@ body {
 
   .footer {
     max-width: 1200px;
+    margin-top: 45px;
   }
 
   .social-networks-list {
