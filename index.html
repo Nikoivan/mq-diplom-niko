@@ -428,6 +428,7 @@
               <input
                 type="search"
                 id="search"
+                title="Поиск по сайту"
                 class="search-field"
                 placeholder="Найти..."
                 data-tooltip="Найти..."
@@ -445,13 +446,14 @@
               <input
                 type="email"
                 id="email-form"
+                title="Введите ваш email адрес"
                 class="search-field"
                 placeholder="Ваш email-адрес"
               />
             </label>
             <label type="button" for="popup__subscribe-id" class="subscribe-button">Подписаться</label>          
-            <input type="checkbox" id="popup__subscribe-id" class="popup__subscribe">
-            <div class="popup">                
+            <input type="checkbox" id="popup__subscribe-id" title="Анкета для подписки" class="popup__subscribe">
+            <div class="popup__hidden">                
               <div class="popup-info">
                 <label for="popup__subscribe-id" class="popup-close">&times;</label>                    
                 <div class="popup-container">
@@ -471,8 +473,8 @@
                     <div class="sub">
                         <span class="post-text subscribe-question">Вы подписаны на e-mail рассылку?</span>
                       <label class="subscription">
-                        <input type="radio" name="check" class="subscription-check" checked><span class="post-text subscribe-question radio-check">Да</span>
-                        <input type="radio" name="check" class="subscription-check"><span class="post-text subscribe-question radio-check">Нет</span>
+                        <input type="radio" name="check" title="подписаться" class="subscription-check" checked><span class="post-text subscribe-question radio-check">Да</span>
+                        <input type="radio" name="check" title="отписатьсяя" class="subscription-check"><span class="post-text subscribe-question radio-check">Нет</span>
                       </label>                      
                     </div>                    
                   </div>
