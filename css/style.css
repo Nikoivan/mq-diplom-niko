@@ -267,6 +267,10 @@ body {
   color: #0f0d0e;
 }
 
+.post__title:hover {
+  color: #b59f5b;
+}
+
 .post-info {
   margin-top: 14px;
 }
@@ -345,6 +349,10 @@ body {
   line-height: 1.29;
 }
 
+.post-side__title:hover {
+  color: #b59f5b;
+}
+
 .forms {
   margin-top: 46px;
   padding: 0 15px;
@@ -380,6 +388,17 @@ body {
 
 .search-field:focus {
   outline: 1px solid #b59f5b;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .search-button {
@@ -672,7 +691,7 @@ body {
   font-size: 12px;
   color: #0f0d0e;
   position: relative;
-  letter-spacing: 1.9px;
+  letter-spacing: 1.5px;
 }
 
 .theme-link:hover {
@@ -687,7 +706,7 @@ body {
   color: #b59f5b;
   position: relative;
   top: -3px;
-  left: -2px;
+  left: -1px;
 }
 
 .products {
@@ -1014,7 +1033,7 @@ body {
   }
 
   .content_image {
-    max-width: 391px;
+    max-width: 100%;
   }
 
   .post__title {
@@ -1310,7 +1329,7 @@ body {
 
   .trend-list__title {
     font-size: 20px;
-    letter-spacing: -0.5px;
+    letter-spacing: 0.5px;
   }
 
   .trends {
@@ -1361,14 +1380,14 @@ body {
 
   .last-post {
     display: flex;
-    margin-top: 56px;
+    margin-top: 53px;
     justify-content: space-between;
     align-items: flex-start;
     border: none;
   }
 
   .last-post:first-child {
-    margin-top: 9px;
+    margin-top: 8px;
   }
 
   .last-post:last-child {
@@ -1378,12 +1397,13 @@ body {
   .content-picture {
     margin-right: 26px;
     min-width: 50%;
+    max-width: 383px;
     background-color: #eff6f1;
   }
 
   .content_image {
-    width: 381px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
   }
 
   .content-post {
@@ -1514,7 +1534,7 @@ body {
   }
 
   .theme-list {
-    margin-top: 24px;
+    margin-top: 26px;
   }
 
   .products {
@@ -1549,8 +1569,6 @@ body {
     object-position: center center;
     width: 100%;
     height: 204px;
-    position: relative;
-    z-index: 1;
   }
 
   .product-simple__image {
@@ -1562,15 +1580,23 @@ body {
 
   .product-container {
     margin-top: -37px;
-    box-sizing: border-box;
-    width: 347px;
-    height: 267px;
-    padding: 51px 17px 0;
+    width: 309px;
+    min-height: 184px;
+    flex-grow: 100;
+    flex-shrink: 0;
+    padding: 51px 16px 26px;
     justify-content: start;
   }
 
   .product__footer {
     margin-top: 23px;
+    padding-left: 0;
+    padding-right: 8px;
+  }
+
+  .product-price {
+    padding-bottom: 5px;
+    letter-spacing: 1.5px;
   }
 
   .shop__button {
@@ -1596,7 +1622,8 @@ body {
 
   .popup-info {
     width: 29.5%;
-    margin-top: 10.6%;
+    margin-top: -245px;
+    padding-bottom: 56px;
   }
 
   .popup-close {
