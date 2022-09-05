@@ -437,6 +437,7 @@
                 placeholder="Найти..."
                 data-tooltip="Найти..."
               />
+              <span class="visually-hidden">Поле ввода искомого слова</span>
             </label>
             <button type="button" class="search-button">
               <span class="visually-hidden">Поиск по сайту</span>
@@ -456,6 +457,7 @@
                 class="search-field"
                 placeholder="Ваш email-адрес"
               />
+              <span class="visually-hidden">Поле ввода e-mail адреса</span>
             </label>
             <label for="popup__subscribe-id" class="subscribe-button"
               >Подписаться</label
@@ -466,6 +468,7 @@
               title="Анкета для подписки"
               class="popup__subscribe"
             />
+            <span class="visually-hidden">Анкета подписки</span>
             <div class="popup">
               <div class="popup-info">
                 <label for="popup__subscribe-id" class="popup-close"
@@ -506,7 +509,9 @@
                           title="подписаться"
                           class="subscription-check"
                           checked
-                        /><span class="post-text subscribe-question radio-check"
+                        />
+                        <span class="visually-hidden">Подписаться</span>
+                        <span class="post-text subscribe-question radio-check"
                           >Да</span
                         >
                       </label>
@@ -516,7 +521,9 @@
                           name="check"
                           title="отписаться"
                           class="subscription-check"
-                        /><span class="post-text subscribe-question radio-check"
+                        />
+                        <span class="visually-hidden">Отписаться</span>
+                        <span class="post-text subscribe-question radio-check"
                           >Нет</span
                         >
                       </label>
