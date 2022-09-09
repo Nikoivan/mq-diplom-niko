@@ -1355,18 +1355,18 @@ body {
   }
 
   .trend {
-    width: 414px;
+    width: 25%;
     height: 318px;
     flex-shrink: 1;
     margin-left: 3px;
   }
 
-  .trend:nth-child(odd) {
-    margin-left: 7px;
+  .trend:first-child {
+    margin-left: 0;
   }
 
   .trend-container {
-    padding: 35px 37px 30px;
+    padding: 35px 12% 30px;
   }
 
   .trend__title {
@@ -1628,7 +1628,7 @@ body {
 
   .product-container {
     margin-top: -37px;
-    width: 309px;
+    width: 82%;
     min-height: 184px;
     flex-grow: 100;
     flex-shrink: 0;
