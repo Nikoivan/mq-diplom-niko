@@ -902,7 +902,8 @@ body {
   font-size: 12px;
 }
 
-@media (min-width: 641px) and (orientation: portrait), (max-width: 640px) and (orientation: landscape) {
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait),
+  (max-width: 640px) and (orientation: landscape) {
   .header {
     background-image: url(../images/banner-bg-tablet.jpg);
     padding: 44px 35px 110px;
@@ -1257,16 +1258,18 @@ body {
 }
 
 @media (min-width: 1201px),
-  (min-width: 641px) and (orientation: landscape) {
+  (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
   .header {
     background-color: #000;
     background-image: url(../images/banner-bg.jpg);
-    background-position: left top;
+    background-size: cover;
     margin: 0 auto;
     padding: 28px 0 126px;
   }
 
   .menu {
+    flex-direction: row;
+    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
@@ -1307,6 +1310,10 @@ body {
     display: none;
   }
 
+  .logo {
+    margin-top: 0;
+  }
+
   .logotip {
     width: 180px;
   }
@@ -1315,7 +1322,6 @@ body {
     text-align: center;
     width: 53%;
     padding: 0;
-
     margin: 100px auto 0;
   }
 
@@ -1323,6 +1329,10 @@ body {
     font-size: 45px;
     line-height: 1.67;
     letter-spacing: -0.9px;
+  }
+
+  .trend-list {
+    display: flex;
   }
 
   .trend-list__header {
@@ -1347,7 +1357,7 @@ body {
   .trend {
     width: 414px;
     height: 318px;
-    flex-shrink: 0;
+    flex-shrink: 1;
     margin-left: 3px;
   }
 
@@ -1366,6 +1376,9 @@ body {
   }
 
   .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
     max-width: 1200px;
     padding: 0 15px;
     margin: 54px auto 16px;
@@ -1486,7 +1499,7 @@ body {
 
   .post-text {
     display: block;
-    margin-top: 19px;
+    margin-top: 45px;
     font-family: "Open Sans Regular", sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -1500,6 +1513,13 @@ body {
   }
 
   .side-container {
+    flex: 1 1 27vw;
+    max-width: 270px;
+    min-width: 270px;
+    padding: 0;
+  }
+
+  .side-bar {
     padding: 0;
   }
 
@@ -1517,6 +1537,11 @@ body {
   }
 
   .forms {
+    margin-top: 62px;
+    padding: 0;
+  }
+
+  .second-side_header {
     margin-top: 60px;
   }
 
@@ -1526,6 +1551,7 @@ body {
 
   .tags {
     margin-top: 57px;
+    padding: 0;
   }
 
   .tag-list-item {
@@ -1533,7 +1559,12 @@ body {
   }
 
   .themes {
+    padding: 0;
     margin-top: 52px;
+  }
+
+  .theme__header {
+    margin-top: 48px;
   }
 
   .theme-list {
@@ -1541,6 +1572,7 @@ body {
   }
 
   .products {
+    padding: 0;
     margin: 0 auto;
     max-width: 1200px;
   }
@@ -1567,6 +1599,8 @@ body {
   .products-list {
     flex-wrap: nowrap;
     justify-content: space-between;
+    justify-content: flex-start;
+    padding: 20px 0;
   }
 
   .last-product {
