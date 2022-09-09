@@ -1256,7 +1256,8 @@ body {
   }
 }
 
-@media (min-width: 1200px), (max-width: 1199px) and (orientation: landscape) {
+@media (min-width: 1200px),
+  (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
   .header {
     background-color: #000;
     background-image: url(../images/banner-bg.jpg);
