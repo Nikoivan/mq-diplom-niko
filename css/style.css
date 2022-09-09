@@ -902,7 +902,7 @@ body {
   font-size: 12px;
 }
 
-@media (min-width: 641px), (max-width: 640px) and (orientation: landscape) {
+@media screen and (min-width: 641px) and (max-width: 1199px), screen and (max-width: 640px) and (orientation: landscape) {
   .header {
     background-image: url(../images/banner-bg-tablet.jpg);
     padding: 44px 35px 110px;
@@ -1256,8 +1256,8 @@ body {
   }
 }
 
-@media (min-width: 1200px),
-  (min-width: 641px) and (orientation: landscape) {
+@media screen and (min-width: 1200px),
+  screen and (min-width: 641px) and (orientation: landscape) {
   .header {
     background-color: #000;
     background-image: url(../images/banner-bg.jpg);
